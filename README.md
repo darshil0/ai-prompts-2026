@@ -41,7 +41,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 - **Multimodal Simulations:** Starling murmuration with hand-tracking and generative soundscapes (IDs 191–193)
 - **Advanced Agentic Tools:** Edit-then-test loops and extended output refactoring (65k tokens) (IDs 195–196)
 - **Logic & Science Breakthroughs:** ARC-AGI-2 logic puzzles and GPQA Diamond (PhD-level) (IDs 197–198)
-- **Release Date:** February 24, 2026
+- **Release Date:** February 18, 2026
 
 ---
 
