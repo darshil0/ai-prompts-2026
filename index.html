@@ -18,18 +18,84 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Hanken+Grotesk:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    :root {
+      --paper: #fcfaf7;
+      --ink: #1a1a1a;
+      --accent: #ff4f00;
+      --border-width: 2px;
     }
 
-    .glass {
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+    body {
+      font-family: 'Hanken Grotesk', sans-serif;
+      background-color: var(--paper);
+      color: var(--ink);
+      overflow-x: hidden;
+      margin: 0;
+    }
+
+    /* Grain Overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .fraunces { font-family: 'Fraunces', serif; }
+    .mono { font-family: 'IBM Plex Mono', monospace; }
+
+    .sharp-card {
+      background: white;
+      border: var(--border-width) solid var(--ink);
+      box-shadow: 4px 4px 0 0 var(--ink);
+      transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .sharp-card:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 8px 8px 0 0 var(--accent);
+    }
+
+    .accent-btn {
+      background: var(--accent);
+      color: white;
+      border: var(--border-width) solid var(--ink);
+      box-shadow: 3px 3px 0 0 var(--ink);
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: bold;
+      transition: all 0.1s;
+    }
+
+    .accent-btn:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 5px 5px 0 0 var(--ink);
+    }
+
+    .accent-btn:active {
+      transform: translate(2px, 2px);
+      box-shadow: 0 0 0 0 var(--ink);
+    }
+
+    .filter-btn {
+      border: 1px solid var(--ink);
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover {
+      background: var(--ink);
+      color: white;
+    }
+
+    .filter-btn.active {
+      background: var(--ink);
+      color: white;
+      box-shadow: 3px 3px 0 0 var(--accent);
     }
 
     .toast-up {
@@ -37,59 +103,27 @@
     }
 
     @keyframes toastUp {
-      from {
-        transform: translate(-50%, 40px);
-        opacity: 0;
-      }
-
-      to {
-        transform: translate(-50%, 0);
-        opacity: 1;
-      }
+      from { transform: translate(-50%, 40px); opacity: 0; }
+      to { transform: translate(-50%, 0); opacity: 1; }
     }
 
-    .fade-in {
-      animation: fadeIn 0.5s ease-out;
+    .staggered-fade-in {
+      animation: staggeredFadeIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+      opacity: 0;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    @keyframes staggeredFadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--paper); }
+    ::-webkit-scrollbar-thumb { background: var(--ink); }
 
-    ::-webkit-scrollbar-track {
-      background: #f1f5f9;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
-      border-radius: 10px;
-    }
-
-    .card-hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .card-hover:hover {
-      transform: translateY(-8px);
-    }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    .tag-accent {
+      border-bottom: 2px solid var(--accent);
+      font-weight: 700;
     }
 
     /* FIX 8: Visually hidden label for screen readers */
@@ -423,206 +457,137 @@
       }), [filteredItems.length, categories]);
 
       return (
-        <div className="min-h-screen pb-20">
-          {/* Hero Header */}
-          <header className="glass sticky top-0 z-50 border-b border-white/20 shadow-xl">
-            <div className="max-w-7xl mx-auto px-6 py-8">
-              <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div className="text-center md:text-left">
-                  <h1 className="text-4xl md:text-5xl font-extrabold gradient-text mb-2">
-                    🤖 AI Prompt Library
-                  </h1>
-                  <p className="text-slate-600 text-sm font-medium">
-                    {stats.total} Premium Prompts · {stats.categories} Categories · v4.2.0
-                  </p>
+        <div className="min-h-screen pb-20 px-4 md:px-8">
+          {/* Editorial Header */}
+          <header className="max-w-7xl mx-auto pt-16 pb-12 border-b-4 border-black mb-12 relative z-10">
+            <div className="flex flex-col lg:flex-row justify-between items-end gap-8">
+              <div className="max-w-2xl">
+                <h1 className="text-6xl md:text-8xl fraunces font-black leading-none mb-6 tracking-tighter uppercase">
+                  AI PROMPT <br/> ARCHIVE
+                </h1>
+                <p className="text-xl md:text-2xl font-medium max-w-lg leading-snug">
+                  A curated collection of <span className="tag-accent">{stats.total}</span> premium prompts for the next generation of creative machines.
+                </p>
+              </div>
+              <div className="flex flex-col items-end gap-6 w-full lg:w-auto">
+                <div className="mono text-sm font-bold bg-black text-white px-4 py-2 uppercase tracking-widest">
+                  v4.2.0 / 2026 Edition
                 </div>
-
-                <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-                  {/* FIX 8: Added visually-hidden label and id for accessibility */}
-                  <label htmlFor="prompt-search" className="sr-only">Search prompts</label>
-                  <input
-                    id="prompt-search"
-                    type="text"
-                    placeholder="🔍 Search prompts, tags..."
-                    className="px-5 py-3 w-full sm:w-80 border-2 border-slate-200 rounded-xl outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all font-medium"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                  />
-                  <div className="flex gap-2" role="group" aria-label="View mode">
-                    {/* FIX 7 & 9: Added aria-label and type="button" to view toggle buttons */}
-                    <button
-                      type="button"
-                      onClick={() => setViewMode('grid')}
-                      aria-label="Grid view"
-                      aria-pressed={viewMode === 'grid'}
-                      className={`px-4 py-3 rounded-xl font-bold transition-all ${viewMode === 'grid' ? 'bg-indigo-600 text-white shadow-lg' : 'bg-white text-slate-600 border-2 border-slate-200'}`}
-                    >
-                      ⊞
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setViewMode('list')}
-                      aria-label="List view"
-                      aria-pressed={viewMode === 'list'}
-                      className={`px-4 py-3 rounded-xl font-bold transition-all ${viewMode === 'list' ? 'bg-indigo-600 text-white shadow-lg' : 'bg-white text-slate-600 border-2 border-slate-200'}`}
-                    >
-                      ☰
-                    </button>
+                <div className="relative w-full sm:w-80">
+                  <label htmlFor="prompt-search" className="sr-only">Search</label>
+                  <div className="flex items-center border-b-4 border-black">
+                    <span className="text-2xl mr-2">🔍</span>
+                    <input
+                      id="prompt-search"
+                      type="text"
+                      placeholder="SEARCH ARCHIVE..."
+                      className="w-full bg-transparent py-2 px-0 text-2xl font-bold focus:outline-none placeholder:text-gray-300 mono"
+                      value={search}
+                      onChange={(e) => setSearch(e.target.value)}
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </header>
 
-          <main className="max-w-7xl mx-auto px-6 py-10">
-            {/* Stats Bar */}
-            <div className="glass rounded-2xl p-6 mb-8 border border-white/20 shadow-lg">
-              <div className="flex flex-wrap gap-6 justify-center text-center">
-                <div>
-                  <div className="text-3xl font-extrabold gradient-text">{stats.total}</div>
-                  <div className="text-sm text-slate-600 font-semibold">Total Prompts</div>
-                </div>
-                <div className="w-px bg-slate-200"></div>
-                <div>
-                  <div className="text-3xl font-extrabold gradient-text">{stats.categories}</div>
-                  <div className="text-sm text-slate-600 font-semibold">Categories</div>
-                </div>
-                <div className="w-px bg-slate-200"></div>
-                <div>
-                  <div className="text-3xl font-extrabold gradient-text">{stats.filtered}</div>
-                  <div className="text-sm text-slate-600 font-semibold">Showing</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Category Filter */}
-            <nav className="flex flex-wrap gap-3 mb-10 justify-center" aria-label="Category filter">
+          <main className="max-w-7xl mx-auto relative z-10">
+            {/* Minimal Nav */}
+            <nav className="flex flex-wrap gap-2 mb-12 border-b border-black pb-8" aria-label="Category filter">
               {categories.map(c => (
                 <button
                   type="button"
                   key={c}
                   onClick={() => setFilter(c)}
-                  aria-pressed={filter === c}
-                  className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 ${filter === c
-                    ? "bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-xl"
-                    : "glass text-slate-700 border border-slate-200 hover:border-indigo-300 hover:shadow-md"
-                    }`}
+                  className={`filter-btn px-4 py-1.5 text-xs font-bold uppercase tracking-widest mono ${filter === c ? 'active' : ''}`}
                 >
-                  {c} {c !== "All" && <span className="opacity-70">({categoryCounts[c]})</span>}
+                  {c} {c !== "All" && <span className="opacity-50">[{categoryCounts[c]}]</span>}
                 </button>
               ))}
             </nav>
 
-            {/* Prompts Grid/List */}
+            {/* Asymmetrical Grid */}
             <div className={
               viewMode === 'grid'
-                ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-                : "flex flex-col gap-4"
+                ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+                : "flex flex-col gap-8"
             }>
               {filteredItems.map((p, idx) => (
                 <article
                   key={p.id}
-                  className={`glass border border-slate-200 rounded-2xl p-6 flex flex-col card-hover shadow-lg fade-in ${viewMode === 'list' ? 'md:flex-row md:items-center md:gap-6' : ''
-                    }`}
-                  // FIX 2: Cap animation delay — was up to 9.1s with 183 items; now max 0.4s
-                  style={{ animationDelay: `${Math.min(idx * 0.05, 0.4)}s` }}
+                  className={`sharp-card p-8 flex flex-col staggered-fade-in ${viewMode === 'list' ? 'md:flex-row md:gap-10' : ''}`}
+                  style={{ animationDelay: `${Math.min(idx * 0.05, 0.5)}s` }}
                 >
-                  <div className={`flex-1 ${viewMode === 'list' ? 'md:order-2' : ''}`}>
-                    <div className="flex justify-between items-start mb-4">
-                      <span className="text-[10px] font-extrabold uppercase tracking-widest text-white bg-gradient-to-r from-indigo-600 to-violet-600 px-3 py-1.5 rounded-lg shadow-md">
-                        {p.category}
-                      </span>
-                      {/* FIX 7 & 9: Added aria-label and type="button" to copy button */}
+                  <div className="flex justify-between items-start mb-6">
+                    <span className="mono text-[10px] font-bold uppercase tracking-[0.2em] border border-black px-2 py-1">
+                      {p.category}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => copyToClipboard(p.content, p.title)}
+                      className="accent-btn text-[10px] uppercase tracking-widest px-4 py-1.5"
+                    >
+                      Copy
+                    </button>
+                  </div>
+
+                  <div className="flex-1">
+                    <h3 className="fraunces text-3xl font-black mb-3 leading-tight">{p.title}</h3>
+                    <p className="text-sm leading-relaxed mb-6 font-medium text-gray-700">{p.description}</p>
+
+                    <div className="bg-gray-50 p-4 border-l-4 border-black mb-6">
+                      <p className={`mono text-xs leading-relaxed transition-all ${expandedId === p.id ? "" : "line-clamp-3 text-gray-400"}`}>
+                        {p.content}
+                      </p>
                       <button
-                        type="button"
-                        onClick={() => copyToClipboard(p.content, p.title)}
-                        aria-label={`Copy prompt: ${p.title}`}
-                        className="text-xs font-bold bg-slate-900 hover:bg-slate-800 text-white px-5 py-2 rounded-lg transition-all active:scale-95 shadow-lg hover:shadow-xl"
+                        onClick={() => setExpandedId(expandedId === p.id ? null : p.id)}
+                        className="mono text-[10px] font-bold uppercase mt-4 underline decoration-accent decoration-2 underline-offset-4"
                       >
-                        📋 Copy
+                        {expandedId === p.id ? "Close View" : "Examine Content"}
                       </button>
                     </div>
 
-                    <h3 className="font-bold text-xl mb-2 leading-tight text-slate-900">{p.title}</h3>
-                    <p className="text-slate-600 text-sm mb-3 font-medium">{p.description}</p>
-
-                    <div className="relative mb-4">
-                      <p className={`text-slate-500 text-sm leading-relaxed transition-all ${expandedId === p.id ? "" : "line-clamp-2"
-                        }`}>
-                        {p.content}
-                      </p>
-                      {p.content.length > 100 && (
-                        <button
-                          type="button"
-                          onClick={() => setExpandedId(expandedId === p.id ? null : p.id)}
-                          aria-expanded={expandedId === p.id}
-                          className="text-indigo-600 text-xs font-bold mt-2 hover:text-indigo-800 transition-colors"
-                        >
-                          {expandedId === p.id ? "▲ Show Less" : "▼ Read Full Prompt"}
-                        </button>
-                      )}
-                    </div>
-
-                    <div className="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mt-auto">
                       {p.tags.map(t => (
-                        <span
-                          key={t}
-                          className="text-xs text-indigo-700 font-semibold bg-indigo-50 px-3 py-1 rounded-full"
-                        >
-                          #{t}
+                        <span key={t} className="mono text-[9px] uppercase tracking-widest bg-gray-100 px-2 py-1">
+                          #{t.replace(/\s+/g, '')}
                         </span>
                       ))}
                     </div>
                   </div>
-
-                  {viewMode === 'list' && (
-                    <div className="md:order-1 text-4xl font-extrabold text-slate-200 md:w-16 text-center">
-                      {p.id}
-                    </div>
-                  )}
                 </article>
               ))}
             </div>
 
             {filteredItems.length === 0 && (
-              <div className="text-center py-20 fade-in">
+              <div className="text-center py-20 staggered-fade-in">
                 <div className="text-6xl mb-4">🔍</div>
-                <p className="text-slate-500 text-xl font-semibold mb-2">No prompts found</p>
-                <p className="text-slate-400">Try adjusting your search or filter</p>
-                {/* FIX 6: Reset button now also clears expandedId */}
+                <p className="text-gray-500 text-xl font-bold mb-2 fraunces">No results found in archive</p>
+                <p className="mono text-xs uppercase tracking-widest text-gray-400">Try adjusting your parameters</p>
                 <button
                   type="button"
                   onClick={() => { setSearch(""); setFilter("All"); setExpandedId(null); }}
-                  className="mt-6 px-6 py-3 bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all"
+                  className="mt-8 accent-btn px-8 py-3 uppercase tracking-widest text-sm"
                 >
-                  Reset Filters
+                  Reset Archive
                 </button>
               </div>
             )}
           </main>
 
-          {/* Footer */}
-          <footer className="glass border-t border-white/20 mt-20 py-8">
-            <div className="max-w-7xl mx-auto px-6 text-center">
-              <p className="text-slate-600 font-semibold mb-2">
-                Made with ❤️ by <a href="https://github.com/darshil0" className="gradient-text font-bold hover:underline">Darshil Shah</a>
-              </p>
-              <p className="text-slate-500 text-sm">
-                MIT License · Open Source · Star on <a href="https://github.com/darshil0/ai-prompt-collection-2026" className="text-indigo-600 font-semibold hover:underline">GitHub</a>
-              </p>
-            </div>
-          </footer>
-
-          {/* Toast Notification */}
+          {/* Minimal Toast */}
           {toast && (
-            <div
-              role="status"
-              aria-live="polite"
-              className="fixed bottom-10 left-1/2 -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-8 py-4 rounded-2xl shadow-2xl z-50 toast-up font-bold text-sm"
-            >
+            <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-[100] mono text-xs font-bold bg-black text-white px-8 py-4 toast-up border-2 border-[#ff4f00]">
               {toast}
             </div>
           )}
+
+          {/* Simple Footer */}
+          <footer className="max-w-7xl mx-auto mt-20 pt-10 border-t-2 border-black text-center relative z-10">
+            <p className="mono text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400">
+              © 2026 Archive Maintainer <span className="text-[#ff4f00] mx-2">•</span> Designed for Precision <span className="text-[#ff4f00] mx-2">•</span> <a href="https://github.com/darshil0" className="hover:text-black transition-colors underline decoration-1 underline-offset-4">Source</a>
+            </p>
+          </footer>
         </div>
       );
     };
