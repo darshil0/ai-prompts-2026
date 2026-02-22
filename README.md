@@ -1,4 +1,6 @@
-# 🤖 AI Prompt Collection 2025
+# 🤖 AI Prompt Collection 2026
+
+<!-- FIX 1: Title year corrected from "2025" to "2026" -->
 
 A curated, open-source library of **183 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini, and beyond).
 
@@ -48,7 +50,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 | Category | Count | Description |
 |----------|-------|-------------|
 | **Infographics** | 8 | Timelines, data visualizations, journey maps, comparison matrices |
-| **Image Generation** | 13 | Agentic vision, Gemini multimodal, negative prompts, spatial reasoning |
+| **Image Generation** | 12 | Agentic vision, Gemini multimodal, negative prompts, spatial reasoning |
 | **Image Editing** | 12 | Temporal fusion, style transfers, composites, retouching |
 | **Video Generation** | 10 | Cinematic camera movements, drone shots, and FPV flight |
 | **Marketing** | 14 | Viral threads, social media agents, ad copy, landing pages |
@@ -103,8 +105,11 @@ ai-prompt-collection-2026/
 ├── index.html          # Complete web app with all 183 prompts
 ├── README.md           # This file
 ├── LICENSE             # MIT License
-└── favicon.svg         # Project icon
+├── favicon.svg         # Project icon (SVG)
+└── favicon.png         # Project icon (PNG fallback)
 ```
+
+<!-- FIX 4: Added favicon.png to project structure — index.html references both formats -->
 
 ---
 
@@ -119,7 +124,7 @@ We welcome high-quality prompt submissions!
 
 ```javascript
 {
-  id: 126,
+  id: 184,
   title: "Your Prompt Title",
   category: "Category Name",
   description: "Brief one-liner description",
@@ -127,6 +132,8 @@ We welcome high-quality prompt submissions!
   content: "Full prompt text that users will copy"
 }
 ```
+
+<!-- FIX 2: Example ID updated from 126 (already taken) to 184 (next available) -->
 
 3. **Update** category counts in README.md
 4. **Test** the web interface locally
