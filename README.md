@@ -2,11 +2,11 @@
 
 <!-- FIX 1: Title year corrected from "2025" to "2026" -->
 
-A curated, open-source library of **183 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini, and beyond).
+A curated, open-source library of **200 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini, and beyond).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-4.1.0-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
-[![Prompts](https://img.shields.io/badge/prompts-198-purple.svg)](index.html)
+[![Version](https://img.shields.io/badge/version-4.2.0-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
+[![Prompts](https://img.shields.io/badge/prompts-200-purple.svg)](index.html)
 
 ---
 
@@ -20,6 +20,14 @@ A curated, open-source library of **183 premium AI prompts** optimized for moder
 
 ### Option 2: Direct Integration
 Extract prompts from the `promptData` array in `index.html` for programmatic use in your own applications.
+
+---
+
+## ✨ What's New in v4.2.0
+
+- **Added 2 new Coding Assistant prompts** for ChatGPT 5.2 Codex and Claude Sonnet 4.6
+- **Enhanced Coding Category:** Total prompts increased to 27
+- **Release Date:** February 25, 2026
 
 ---
 
@@ -66,7 +74,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 | **Video Generation** | 10 | Cinematic camera movements, drone shots, and FPV flight |
 | **Marketing** | 14 | Viral threads, social media agents, ad copy, landing pages |
 | **Career** | 15 | Resumes, LinkedIn optimization, negotiation, FAANG interviews |
-| **Coding** | 25 | 3D simulations, AI Studio, full-stack generator, vision+code |
+| **Coding** | 27 | 3D simulations, AI Studio, full-stack generator, vision+code |
 | **Problem Solving** | 11 | ARC-AGI-2, GPQA Diamond, decision frameworks, habit systems |
 | **Design** | 8 | Vibe coding, color palettes, typography, icons, accessibility |
 | **Agentic AI** | 35 | Edit-then-test, long context refactor, Deep Think, multi-agent |
@@ -76,7 +84,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 | **Data Analysis** | 9 | ISS dashboard, insight extraction, SQL generation, predictive models |
 | **Personal Productivity** | 7 | Anti-procrastination, energy-based scheduling, habit conversion |
 
-**Total: 198 Prompts**
+**Total: 200 Prompts**
 
 ---
 
@@ -113,7 +121,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 
 ```
 ai-prompt-collection-2026/
-├── index.html          # Complete web app with all 183 prompts
+├── index.html          # Complete web app with all 200 prompts
 ├── README.md           # This file
 ├── LICENSE             # MIT License
 ├── favicon.svg         # Project icon (SVG)
@@ -135,7 +143,7 @@ We welcome high-quality prompt submissions!
 
 ```javascript
 {
-  id: 184,
+  id: 201,
   title: "Your Prompt Title",
   category: "Category Name",
   description: "Brief one-liner description",
@@ -202,10 +210,10 @@ Special thanks to the AI community for inspiration, feedback, and testing. This 
 
 ## 📊 Project Stats
 
-- **Total Prompts:** 198
+- **Total Prompts:** 200
 - **Categories:** 15
-- **Version:** 4.1.0
-- **Release Date:** February 24, 2026
+- **Version:** 4.2.0
+- **Release Date:** February 25, 2026
 - **License:** MIT
 - **Maintained by:** [Darshil Shah](https://github.com/darshil0)
 
