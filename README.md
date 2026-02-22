@@ -1,10 +1,10 @@
 # 🤖 AI Prompt Collection 2025
 
-A curated, open-source library of **125 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini, and beyond).
+A curated, open-source library of **183 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini, and beyond).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-3.3.0-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
-[![Prompts](https://img.shields.io/badge/prompts-125-purple.svg)](index.html)
+[![Version](https://img.shields.io/badge/version-4.0.0-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
+[![Prompts](https://img.shields.io/badge/prompts-183-purple.svg)](index.html)
 
 ---
 
@@ -18,6 +18,16 @@ A curated, open-source library of **125 premium AI prompts** optimized for moder
 
 ### Option 2: Direct Integration
 Extract prompts from the `promptData` array in `index.html` for programmatic use in your own applications.
+
+---
+
+## ✨ What's New in v4.0.0
+
+- **Added 58 new prompts** across 5 new categories and 3 expanded ones
+- **New Categories:** Writing & Content, Education & Learning, Audio & Music, Data Analysis, and Personal Productivity
+- **Expanded Categories:** Video Generation (1→10), Coding (+5), and Career (+5)
+- **Updated Category Breakdown** and total prompt count (183)
+- **Release Date:** February 22, 2026
 
 ---
 
@@ -40,15 +50,20 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 | **Infographics** | 8 | Timelines, data visualizations, journey maps, comparison matrices |
 | **Image Generation** | 13 | Agentic vision, Gemini multimodal, negative prompts, spatial reasoning |
 | **Image Editing** | 12 | Temporal fusion, style transfers, composites, retouching |
-| **Video Generation** | 1 | Cinematic camera movements and drone shots |
+| **Video Generation** | 10 | Cinematic camera movements, drone shots, and FPV flight |
 | **Marketing** | 14 | Viral threads, social media agents, ad copy, landing pages |
-| **Career** | 10 | Resumes, LinkedIn optimization, negotiation, portfolios |
-| **Coding** | 18 | AI Studio, full-stack generator, vision+code, Jules-style agents |
+| **Career** | 15 | Resumes, LinkedIn optimization, negotiation, FAANG interviews |
+| **Coding** | 23 | AI Studio, full-stack generator, vision+code, component architecture |
 | **Problem Solving** | 9 | Root cause analysis, decision frameworks, habit systems |
 | **Design** | 7 | Color palettes, typography, icons, accessibility |
 | **Agentic AI** | 33 | Deep Think, NotebookLM, multi-agent, Gemini 3.5 Flash, Google products |
+| **Writing & Content** | 10 | Ghostwriting, SEO blog posts, viral hooks, brand manifestos |
+| **Education & Learning** | 8 | Socratic tutoring, first principles, adaptive quizzes, Feynman method |
+| **Audio & Music** | 6 | Lyric architecture, podcast notes, sound design, genre fusion |
+| **Data Analysis** | 8 | Insight extraction, SQL generation, predictive models, executive summaries |
+| **Personal Productivity** | 7 | Anti-procrastination, energy-based scheduling, habit conversion |
 
-**Total: 125 Prompts**
+**Total: 183 Prompts**
 
 ---
 
@@ -60,7 +75,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 - **Hugging My Younger Self** - Emotional cross-generational composite
 - **SAUCE Logical Challenge** - Alphanumeric constraint puzzle for AI
 
-### 🧠 NEW: Gemini 3.5 Flash & Google AI (v3.3.0)
+### 🧠 NEW: Gemini 3.5 Flash & Google AI (v4.0.0)
 - **Deep Think Mode** - PhD-level reasoning with Fast/Thinking/Pro settings
 - **Agentic Vision** - Think-Act-Observe loops for active image investigation
 - **NotebookLM Research** - Grounded multi-source research with citations
@@ -85,7 +100,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 
 ```
 ai-prompt-collection-2026/
-├── index.html          # Complete web app with all 125 prompts
+├── index.html          # Complete web app with all 183 prompts
 ├── README.md           # This file
 ├── LICENSE             # MIT License
 └── favicon.svg         # Project icon
@@ -169,10 +184,10 @@ Special thanks to the AI community for inspiration, feedback, and testing. This 
 
 ## 📊 Project Stats
 
-- **Total Prompts:** 125
-- **Categories:** 10
-- **Version:** 3.3.0
-- **Release Date:** January 30, 2026
+- **Total Prompts:** 183
+- **Categories:** 15
+- **Version:** 4.0.0
+- **Release Date:** February 22, 2026
 - **License:** MIT
 - **Maintained by:** [Darshil Shah](https://github.com/darshil0)
 
