@@ -1,12 +1,11 @@
-# 🤖 AI Prompt Collection 2026
+# 🤖 AI Prompt Library 2026
 
-<!-- FIX 1: Title year corrected from "2025" to "2026" -->
-
-A curated, open-source library of **183 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini, and beyond).
+A curated, open-source library of **198 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini 3.1 Pro, and beyond).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-4.1.0-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
-[![Prompts](https://img.shields.io/badge/prompts-198-purple.svg)](index.html)
+[![Version](https://img.shields.io/badge/version-4.1.1-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
+[![Prompts](https://img.shields.io/badge/prompts-198-F59E0B.svg)](index.html)
+[![Changelog](https://img.shields.io/badge/changelog-CHANGELOG.md-informational.svg)](CHANGELOG.md)
 
 ---
 
@@ -15,97 +14,101 @@ A curated, open-source library of **183 premium AI prompts** optimized for moder
 ### Option 1: Use the Web Interface
 1. Open `index.html` in your browser
 2. Browse by category or search by keyword
-3. Click "Copy" to grab any prompt
-4. Paste into your favorite AI tool
+3. Click **Copy** to grab any prompt
+4. Paste into your favourite AI tool
 
 ### Option 2: Direct Integration
 Extract prompts from the `promptData` array in `index.html` for programmatic use in your own applications.
 
 ---
 
+## ✨ What's New in v4.1.1
+
+- **Design overhaul** — replaced generic Inter/purple-gradient aesthetic with a distinctive dark editorial theme (Syne + Outfit fonts, amber accent palette)
+- **Full bug-fix pass** — animation delay overflow, stale `expandedId`, `type="button"` on all buttons, clipboard fallback, memoization corrections
+- **Accessibility** — `aria-label`, `aria-pressed`, `aria-expanded`, `role="status"`, `.sr-only` labels, semantic HTML throughout
+- **CSS custom property system** — all colours defined as `--color-*` variables for easy theming
+- **New favicon** — robot icon (SVG + PNG) replacing the generic "A" circle
+- **CHANGELOG.md** — full version history added
+- **SKILLS.MD** — expanded with React patterns, accessibility checklist, CSS architecture, and file checklist sections
+
+---
+
 ## ✨ What's New in v4.1.0
 
-- **Added 15 new Gemini 3.1 Pro examples** showcasing advanced reasoning and "Vibe Coding"
-- **New SVG Animation Series:** Pelican, Frog, Giraffe, Ostrich, Turtle, and Dachshund
-- **Multimodal Simulations:** Starling murmuration with hand-tracking and generative soundscapes
-- **Advanced Agentic Tools:** Edit-then-test loops and extended output refactoring (65k tokens)
-- **Logic & Science Breakthroughs:** ARC-AGI-2 logic puzzles and GPQA Diamond (PhD-level)
+- **Added 15 new Gemini 3.1 Pro prompts** showcasing advanced reasoning and "Vibe Coding"
+- **New SVG Animation Series:** Pelican, Frog, Giraffe, Ostrich, Turtle, and Dachshund (IDs 184–189)
+- **Multimodal Simulations:** Starling murmuration with hand-tracking and generative soundscapes (IDs 191–193)
+- **Advanced Agentic Tools:** Edit-then-test loops and extended output refactoring (65k tokens) (IDs 195–196)
+- **Logic & Science Breakthroughs:** ARC-AGI-2 logic puzzles and GPQA Diamond (PhD-level) (IDs 197–198)
 - **Release Date:** February 24, 2026
 
 ---
 
 ## ✨ What's New in v4.0.0
 
-- **Added 58 new prompts** across 5 new categories and 3 expanded ones
+- **Added 58 new prompts** across 5 new categories and 3 expanded existing ones
 - **New Categories:** Writing & Content, Education & Learning, Audio & Music, Data Analysis, and Personal Productivity
-- **Expanded Categories:** Video Generation (1→10), Coding (+5), and Career (+5)
-- **Updated Category Breakdown** and total prompt count (183)
+- **Expanded Categories:** Video Generation (1 → 10), Coding (+5), and Career (+5)
 - **Release Date:** February 22, 2026
-
----
-
-## ✨ What's New in v3.3.0
-
-- **🧠 Gemini 3.5 Flash Deep Agent Mode** - PhD-level reasoning with Think-Act-Observe loops
-- **Google AI Products** - NotebookLM research assistant, AI Studio rapid prototyping, AI Mode shopping
-- **Agentic Vision** - Active image investigation with Python code generation
-- **Deep Think Mode** - Modulated reasoning (Fast/Thinking/Pro) with 30% token efficiency
-- **Full-Stack Generator** - One-shot website and app creation with Snowbunny capabilities
-- **Multimodal Live API** - Real-time streaming agents with text, audio, and video
-- **Total Prompts** - Now 125 prompts across 10 categories
 
 ---
 
 ## 📚 Category Breakdown
 
 | Category | Count | Description |
-|----------|-------|-------------|
+|---|---|---|
 | **Infographics** | 8 | Timelines, data visualizations, journey maps, comparison matrices |
-| **Image Generation** | 18 | SVG animations, agentic vision, Gemini multimodal, spatial reasoning |
+| **Image Generation** | 17 | SVG animations, agentic vision, Gemini multimodal, spatial reasoning |
 | **Image Editing** | 12 | Temporal fusion, style transfers, composites, retouching |
-| **Video Generation** | 10 | Cinematic camera movements, drone shots, and FPV flight |
+| **Video Generation** | 10 | Cinematic camera movements, drone shots, FPV flight, hyperlapses |
 | **Marketing** | 14 | Viral threads, social media agents, ad copy, landing pages |
 | **Career** | 15 | Resumes, LinkedIn optimization, negotiation, FAANG interviews |
-| **Coding** | 25 | 3D simulations, AI Studio, full-stack generator, vision+code |
+| **Coding** | 17 | 3D simulations, AI Studio, full-stack generator, vision+code |
 | **Problem Solving** | 11 | ARC-AGI-2, GPQA Diamond, decision frameworks, habit systems |
 | **Design** | 8 | Vibe coding, color palettes, typography, icons, accessibility |
-| **Agentic AI** | 35 | Edit-then-test, long context refactor, Deep Think, multi-agent |
+| **Agentic AI** | 37 | Edit-then-test, long context refactor, Deep Think, multi-agent |
 | **Writing & Content** | 10 | Ghostwriting, SEO blog posts, viral hooks, brand manifestos |
 | **Education & Learning** | 8 | Socratic tutoring, first principles, adaptive quizzes, Feynman method |
 | **Audio & Music** | 7 | Generative soundscapes, lyric architecture, podcast notes |
 | **Data Analysis** | 9 | ISS dashboard, insight extraction, SQL generation, predictive models |
 | **Personal Productivity** | 7 | Anti-procrastination, energy-based scheduling, habit conversion |
 
-**Total: 198 Prompts**
+**Total: 198 Prompts across 15 Categories**
 
 ---
 
 ## 🎯 Featured Prompts
 
 ### 🔥 Trending in 2026
-- **2026 Vision Board** - Hand-drawn goal visualization with knolling layout
-- **Temporal Fusion** - Seamlessly blend summer/winter in one frame
-- **Hugging My Younger Self** - Emotional cross-generational composite
-- **SAUCE Logical Challenge** - Alphanumeric constraint puzzle for AI
+- **2026 Vision Board** — Hand-drawn goal visualization with knolling layout
+- **Temporal Fusion** — Seamlessly blend summer/winter in one frame
+- **Hugging My Younger Self** — Emotional cross-generational composite
+- **SAUCE Logical Challenge** — Alphanumeric constraint puzzle for AI
 
-### 🧠 NEW: Gemini 3.5 Flash & Google AI (v4.0.0)
-- **Deep Think Mode** - PhD-level reasoning with Fast/Thinking/Pro settings
-- **Agentic Vision** - Think-Act-Observe loops for active image investigation
-- **NotebookLM Research** - Grounded multi-source research with citations
-- **AI Studio Prototyping** - Rapid AI-first app development playground
-- **Full-Stack Generator (Snowbunny)** - One-shot website and app creation
-- **AI Mode Shopping** - Agentic commerce with Google Search UCP
-- **Multimodal Live API** - Real-time streaming agents with voice
+### 🤖 NEW: Gemini 3.1 Pro (v4.1.0)
+- **Animated SVG Series** — Pelican, Frog, Giraffe, Ostrich, Turtle, Dachshund with spatial logic
+- **Starling Murmuration 3D** — Real-time flocking simulation with hand-tracking
+- **Edit-then-Test Agent** — Autonomous bug find, fix, and verify in large repos
+- **ARC-AGI-2 Logic Grid** — Visual pattern recognition at benchmark level
+- **GPQA Diamond Solver** — PhD-level physics and biology (94%+ target accuracy)
+
+### 🧠 Google AI Products (v3.3.0)
+- **Deep Think Mode** — PhD-level reasoning with Fast/Thinking/Pro settings
+- **Agentic Vision** — Think-Act-Observe loops for active image investigation
+- **NotebookLM Research** — Grounded multi-source research with citations
+- **Full-Stack Generator (Snowbunny)** — One-shot website and app creation
+- **Multimodal Live API** — Real-time streaming agents with voice
 
 ### 💼 Professional Power Tools
-- **STAR Resume Bullets** - Convert tasks into quantified achievements
-- **Viral Twitter Thread** - 7-tweet engagement framework
-- **React State Debugger** - Fix stale closures and hooks issues
+- **STAR Resume Bullets** — Convert tasks into quantified achievements
+- **Viral Twitter Thread** — 7-tweet engagement framework
+- **React State Debugger** — Fix stale closures and hooks issues
 
 ### 🎨 Creative Generators
-- **Object Mythology** - Turn everyday items into legendary artifacts
-- **Identity Without Face** - Atmospheric storytelling through posture
-- **Natural Skin Retouch** - Pore-preserving professional editing
+- **Object Mythology** — Turn everyday items into legendary artifacts
+- **Identity Without Face** — Atmospheric storytelling through posture
+- **Natural Skin Retouch** — Pore-preserving professional editing
 
 ---
 
@@ -113,14 +116,14 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 
 ```
 ai-prompt-collection-2026/
-├── index.html          # Complete web app with all 183 prompts
-├── README.md           # This file
-├── LICENSE             # MIT License
-├── favicon.svg         # Project icon (SVG)
-└── favicon.png         # Project icon (PNG fallback)
+├── index.html      # Complete web app with all 198 prompts
+├── README.md       # This file
+├── CHANGELOG.md    # Full version history
+├── SKILLS.MD       # Frontend design & React best practices
+├── LICENSE         # MIT License
+├── favicon.svg     # Project icon (SVG — primary)
+└── favicon.png     # Project icon (PNG — fallback)
 ```
-
-<!-- FIX 4: Added favicon.png to project structure — index.html references both formats -->
 
 ---
 
@@ -135,7 +138,7 @@ We welcome high-quality prompt submissions!
 
 ```javascript
 {
-  id: 184,
+  id: 199,
   title: "Your Prompt Title",
   category: "Category Name",
   description: "Brief one-liner description",
@@ -144,18 +147,16 @@ We welcome high-quality prompt submissions!
 }
 ```
 
-<!-- FIX 2: Example ID updated from 126 (already taken) to 184 (next available) -->
-
-3. **Update** category counts in README.md
-4. **Test** the web interface locally
+3. **Update** the category counts in this README
+4. **Test** the web interface locally in a browser
 5. **Submit** a pull request with a clear description
 
 ### Contribution Guidelines
 
-- **Quality First** - Prompts should be well-tested and produce consistent results
-- **Clear Structure** - Include specific constraints and expected output format
-- **Unique Value** - Avoid duplicating existing prompts
-- **Proper Formatting** - Follow the existing JSON structure
+- **Quality First** — Prompts should be well-tested and produce consistent results
+- **Clear Structure** — Include specific constraints and expected output format
+- **Unique Value** — Avoid duplicating existing prompts (check all 198 before adding)
+- **Proper Formatting** — Follow the existing JSON structure exactly
 
 ---
 
@@ -163,24 +164,26 @@ We welcome high-quality prompt submissions!
 
 ### Maximize Prompt Effectiveness
 
-1. **Be Specific** - Modify prompts with your exact requirements, brand guidelines, or constraints
-2. **Iterate** - Use AI outputs as inputs for refinement and improvement
-3. **Combine** - Mix multiple prompts for complex, multi-step workflows
-4. **Add Context** - Include relevant background information for better results
+1. **Be Specific** — Replace `[PLACEHOLDERS]` with your exact requirements, brand guidelines, or constraints
+2. **Iterate** — Use AI outputs as inputs for refinement and improvement
+3. **Combine** — Mix multiple prompts for complex, multi-step workflows
+4. **Add Context** — Include relevant background information for better results
 
 ### Prompt Engineering Best Practices
 
-- Clear objective statement
+- Clear objective statement at the top
 - Specific constraints and requirements
-- Expected output format
-- Quality indicators (e.g., "professional", "cinematic", "beginner-friendly")
-- Examples when helpful
+- Expected output format (JSON, markdown, code, etc.)
+- Quality indicators ("professional", "cinematic", "beginner-friendly")
+- Numbered steps for complex multi-part tasks
+- Examples when the output format is non-obvious
 
 ---
 
 ## 🔗 Related Resources
 
 - [Anthropic Prompt Library](https://docs.anthropic.com/en/prompt-library/library)
+- [Anthropic Prompt Engineering Guide](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview)
 - [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
 - [Google AI Prompting Introduction](https://ai.google.dev/docs/prompting_intro)
 
@@ -188,7 +191,7 @@ We welcome high-quality prompt submissions!
 
 ## 📜 License
 
-**MIT License** - Free to use, modify, and distribute in your projects.
+**MIT License** — Free to use, modify, and distribute in your projects.
 
 See [LICENSE](LICENSE) file for full details.
 
@@ -196,18 +199,20 @@ See [LICENSE](LICENSE) file for full details.
 
 ## 🙏 Acknowledgments
 
-Special thanks to the AI community for inspiration, feedback, and testing. This collection has been refined with Claude 3.5 Sonnet, GPT-4 & GPT-4 Turbo, and Gemini Pro.
+Special thanks to the AI community for inspiration, feedback, and testing. This collection has been refined with Claude Sonnet 4, GPT-4o, and Gemini 3.1 Pro.
 
 ---
 
 ## 📊 Project Stats
 
-- **Total Prompts:** 198
-- **Categories:** 15
-- **Version:** 4.1.0
-- **Release Date:** February 24, 2026
-- **License:** MIT
-- **Maintained by:** [Darshil Shah](https://github.com/darshil0)
+| Stat | Value |
+|---|---|
+| **Total Prompts** | 198 |
+| **Categories** | 15 |
+| **Version** | 4.1.1 |
+| **Release Date** | February 22, 2026 |
+| **License** | MIT |
+| **Maintained by** | [Darshil Shah](https://github.com/darshil0) |
 
 ---
 
@@ -215,4 +220,4 @@ Special thanks to the AI community for inspiration, feedback, and testing. This 
 
 **💬 Have suggestions?** Open an issue or submit a pull request.
 
-**🐦 Share your creations** using these prompts - tag us!
+**🔄 See what changed:** [CHANGELOG.md](CHANGELOG.md)
