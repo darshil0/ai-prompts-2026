@@ -36,7 +36,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 
 ---
 
-## [4.1.0] — 2026-02-24
+## [4.1.0] — 2026-02-18
 
 ### Added
 - 15 new Gemini 3.1 Pro prompts showcasing advanced reasoning and "Vibe Coding"
@@ -57,7 +57,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 
 ---
 
-## [4.0.0] — 2026-02-22
+## [4.0.0] — 2026-02-10
 
 ### Added
 - 58 new prompts across 5 new categories and 3 expanded existing ones
