@@ -5,8 +5,8 @@
 A curated, open-source library of **183 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini, and beyond).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-4.0.0-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
-[![Prompts](https://img.shields.io/badge/prompts-183-purple.svg)](index.html)
+[![Version](https://img.shields.io/badge/version-4.1.0-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
+[![Prompts](https://img.shields.io/badge/prompts-198-purple.svg)](index.html)
 
 ---
 
@@ -20,6 +20,17 @@ A curated, open-source library of **183 premium AI prompts** optimized for moder
 
 ### Option 2: Direct Integration
 Extract prompts from the `promptData` array in `index.html` for programmatic use in your own applications.
+
+---
+
+## ✨ What's New in v4.1.0
+
+- **Added 15 new Gemini 3.1 Pro examples** showcasing advanced reasoning and "Vibe Coding"
+- **New SVG Animation Series:** Pelican, Frog, Giraffe, Ostrich, Turtle, and Dachshund
+- **Multimodal Simulations:** Starling murmuration with hand-tracking and generative soundscapes
+- **Advanced Agentic Tools:** Edit-then-test loops and extended output refactoring (65k tokens)
+- **Logic & Science Breakthroughs:** ARC-AGI-2 logic puzzles and GPQA Diamond (PhD-level)
+- **Release Date:** February 24, 2026
 
 ---
 
@@ -50,22 +61,22 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 | Category | Count | Description |
 |----------|-------|-------------|
 | **Infographics** | 8 | Timelines, data visualizations, journey maps, comparison matrices |
-| **Image Generation** | 12 | Agentic vision, Gemini multimodal, negative prompts, spatial reasoning |
+| **Image Generation** | 18 | SVG animations, agentic vision, Gemini multimodal, spatial reasoning |
 | **Image Editing** | 12 | Temporal fusion, style transfers, composites, retouching |
 | **Video Generation** | 10 | Cinematic camera movements, drone shots, and FPV flight |
 | **Marketing** | 14 | Viral threads, social media agents, ad copy, landing pages |
 | **Career** | 15 | Resumes, LinkedIn optimization, negotiation, FAANG interviews |
-| **Coding** | 23 | AI Studio, full-stack generator, vision+code, component architecture |
-| **Problem Solving** | 9 | Root cause analysis, decision frameworks, habit systems |
-| **Design** | 7 | Color palettes, typography, icons, accessibility |
-| **Agentic AI** | 33 | Deep Think, NotebookLM, multi-agent, Gemini 3.5 Flash, Google products |
+| **Coding** | 25 | 3D simulations, AI Studio, full-stack generator, vision+code |
+| **Problem Solving** | 11 | ARC-AGI-2, GPQA Diamond, decision frameworks, habit systems |
+| **Design** | 8 | Vibe coding, color palettes, typography, icons, accessibility |
+| **Agentic AI** | 35 | Edit-then-test, long context refactor, Deep Think, multi-agent |
 | **Writing & Content** | 10 | Ghostwriting, SEO blog posts, viral hooks, brand manifestos |
 | **Education & Learning** | 8 | Socratic tutoring, first principles, adaptive quizzes, Feynman method |
-| **Audio & Music** | 6 | Lyric architecture, podcast notes, sound design, genre fusion |
-| **Data Analysis** | 8 | Insight extraction, SQL generation, predictive models, executive summaries |
+| **Audio & Music** | 7 | Generative soundscapes, lyric architecture, podcast notes |
+| **Data Analysis** | 9 | ISS dashboard, insight extraction, SQL generation, predictive models |
 | **Personal Productivity** | 7 | Anti-procrastination, energy-based scheduling, habit conversion |
 
-**Total: 183 Prompts**
+**Total: 198 Prompts**
 
 ---
 
@@ -191,10 +202,10 @@ Special thanks to the AI community for inspiration, feedback, and testing. This 
 
 ## 📊 Project Stats
 
-- **Total Prompts:** 183
+- **Total Prompts:** 198
 - **Categories:** 15
-- **Version:** 4.0.0
-- **Release Date:** February 22, 2026
+- **Version:** 4.1.0
+- **Release Date:** February 24, 2026
 - **License:** MIT
 - **Maintained by:** [Darshil Shah](https://github.com/darshil0)
 
