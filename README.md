@@ -1,10 +1,10 @@
 # 🤖 AI Prompt Library 2026
 
-A curated, open-source library of **198 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini 3.1 Pro, and beyond).
+A curated, open-source library of **200 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini 3.1 Pro, Nano Banana 2, and beyond).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-4.1.1-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
-[![Prompts](https://img.shields.io/badge/prompts-198-F59E0B.svg)](index.html)
+[![Version](https://img.shields.io/badge/version-4.2.0-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
+[![Prompts](https://img.shields.io/badge/prompts-200-F59E0B.svg)](index.html)
 [![Changelog](https://img.shields.io/badge/changelog-CHANGELOG.md-informational.svg)](CHANGELOG.md)
 
 ---
@@ -19,6 +19,14 @@ A curated, open-source library of **198 premium AI prompts** optimized for moder
 
 ### Option 2: Direct Integration
 Extract prompts from the `promptData` array in `index.html` for programmatic use in your own applications.
+
+---
+
+## ✨ What's New in v4.2.0
+
+- **Added Nano Banana 2 prompts** — showcasing hyper-accurate image generation with web-grounding and video storyboarding with subject consistency (IDs 199–200)
+- **Total prompt count reached 200** — a major milestone for the collection
+- **Release Date:** February 26, 2026
 
 ---
 
@@ -59,9 +67,9 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 | Category | Count | Description |
 |---|---|---|
 | **Infographics** | 8 | Timelines, data visualizations, journey maps, comparison matrices |
-| **Image Generation** | 17 | SVG animations, agentic vision, Gemini multimodal, spatial reasoning |
+| **Image Generation** | 18 | Web-grounded reality, SVG animations, agentic vision, spatial reasoning |
 | **Image Editing** | 12 | Temporal fusion, style transfers, composites, retouching |
-| **Video Generation** | 10 | Cinematic camera movements, drone shots, FPV flight, hyperlapses |
+| **Video Generation** | 11 | Narrative consistency, cinematic camera movements, drone shots, hyperlapses |
 | **Marketing** | 14 | Viral threads, social media agents, ad copy, landing pages |
 | **Career** | 15 | Resumes, LinkedIn optimization, negotiation, FAANG interviews |
 | **Coding** | 17 | 3D simulations, AI Studio, full-stack generator, vision+code |
@@ -74,7 +82,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 | **Data Analysis** | 9 | ISS dashboard, insight extraction, SQL generation, predictive models |
 | **Personal Productivity** | 7 | Anti-procrastination, energy-based scheduling, habit conversion |
 
-**Total: 198 Prompts across 15 Categories**
+**Total: 200 Prompts across 15 Categories**
 
 ---
 
@@ -116,7 +124,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 
 ```
 ai-prompt-collection-2026/
-├── index.html      # Complete web app with all 198 prompts
+├── index.html      # Complete web app with all 200 prompts
 ├── README.md       # This file
 ├── CHANGELOG.md    # Full version history
 ├── SKILLS.MD       # Frontend design & React best practices
@@ -155,7 +163,7 @@ We welcome high-quality prompt submissions!
 
 - **Quality First** — Prompts should be well-tested and produce consistent results
 - **Clear Structure** — Include specific constraints and expected output format
-- **Unique Value** — Avoid duplicating existing prompts (check all 198 before adding)
+- **Unique Value** — Avoid duplicating existing prompts (check all 200 before adding)
 - **Proper Formatting** — Follow the existing JSON structure exactly
 
 ---
@@ -207,10 +215,10 @@ Special thanks to the AI community for inspiration, feedback, and testing. This 
 
 | Stat | Value |
 |---|---|
-| **Total Prompts** | 198 |
+| **Total Prompts** | 200 |
 | **Categories** | 15 |
-| **Version** | 4.1.1 |
-| **Release Date** | February 22, 2026 |
+| **Version** | 4.2.0 |
+| **Release Date** | February 26, 2026 |
 | **License** | MIT |
 | **Maintained by** | [Darshil Shah](https://github.com/darshil0) |
 
