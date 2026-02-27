@@ -4,6 +4,19 @@ All notable changes to this project are documented here. Format follows [Keep a 
 
 ---
 
+## [4.2.0] — 2026-02-26
+
+### Added
+- Added new Nano Banana 2 prompts for Image and Video generation (IDs 199–200)
+- Support for "Web-Grounded Factuality" in image generation
+- Support for "Narrative Consistency" and subject preservation in video storyboarding
+
+### Changed
+- Total prompt count: 198 → 200
+- Version bump: 4.1.1 → 4.2.0
+
+---
+
 ## [4.1.1] — 2026-02-22
 
 ### Fixed

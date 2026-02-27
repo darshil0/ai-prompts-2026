@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="198 premium AI prompts for Claude, GPT-4, and Gemini 3.1 Pro — optimized for 2026.">
-  <title>AI Prompt Library 2026 | 198 Premium Prompts</title>
+    content="200 premium AI prompts for Claude, GPT-4, Gemini 3.1 Pro, and Nano Banana 2 — optimized for 2026.">
+  <title>AI Prompt Library 2026 | 200 Premium Prompts</title>
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="alternate icon" href="favicon.png" type="image/png">
@@ -375,7 +375,7 @@
     const { useState, useMemo, useCallback, useEffect } = React;
 
     /* ──────────────────────────────────────────────────────────
-       PROMPT DATA — 198 entries
+       PROMPT DATA — 200 entries
     ────────────────────────────────────────────────────────── */
     const promptData = [
       // INFOGRAPHICS (1-8)
@@ -618,7 +618,11 @@
       { id: 195, title: "Edit-then-Test Agent",              category: "Agentic AI",       description: "Autonomous bug identification and fixing.",                    tags: ["Coding Agent","Testing","Gemini 3.1"],content: "Act as an advanced coding agent. Autonomously identify a bug in a large repository (up to 30,000 lines), write a fix, generate a unit test, and verify the result with minimal tool calls. Optimize for the Gemini 3.1 Pro model's reasoning capabilities." },
       { id: 196, title: "Extended Output Refactor",          category: "Agentic AI",       description: "Refactor massive files in a single pass.",                     tags: ["Code Refactor","Long Context","Gemini 3.1"],content: "Refactor an entire massive code file (up to 60k tokens) in a single pass without truncation, leveraging the 65,536 output token limit to maintain architectural consistency across the entire file." },
       { id: 197, title: "ARC-AGI-2 Logic Grid",             category: "Problem Solving",  description: "Visual logic grid solver for benchmarks.",                     tags: ["Logic","Reasoning","Gemini 3.1"],content: "Solve this visual logic grid from the ARC-AGI-2 benchmark. Use abstract reasoning to identify the underlying pattern and generate the correct output grid for the unseen test case. Achieve a high score through advanced spatial and logical inference." },
-      { id: 198, title: "GPQA Diamond Solver",              category: "Problem Solving",  description: "PhD-level physics and biology reasoning.",                     tags: ["Science","PhD-Level","Gemini 3.1"],content: "Solve this doctoral-level PhD question in physics or biology from the GPQA Diamond benchmark. Provide a step-by-step reasoning process and the final answer, aiming for superhuman accuracy (94%+)." }
+      { id: 198, title: "GPQA Diamond Solver",              category: "Problem Solving",  description: "PhD-level physics and biology reasoning.",                     tags: ["Science","PhD-Level","Gemini 3.1"],content: "Solve this doctoral-level PhD question in physics or biology from the GPQA Diamond benchmark. Provide a step-by-step reasoning process and the final answer, aiming for superhuman accuracy (94%+)." },
+
+      // NANO BANANA 2 (199-200)
+      { id: 199, title: "Nano Banana 2: Web-Grounded Factuality", category: "Image Generation", description: "Hyper-accurate visuals powered by real-time web search grounding.", tags: ["Image Gen","Web-Grounded","Nano Banana 2"], content: "Generate a hyper-realistic image of [SUBJECT], leveraging Nano Banana 2's real-time web search grounding to ensure every detail is factually accurate and up-to-date. Focus on [SPECIFIC DETAIL] and ensure accurate text rendering for any labels or signage. Use vibrant lighting and rich textures to achieve studio-quality visual fidelity at Flash speed." },
+      { id: 200, title: "Nano Banana 2: Narrative Consistency", category: "Video Generation", description: "Storyboarding with perfect character and object resemblance.", tags: ["Video Gen","Storyboarding","Consistency","Nano Banana 2"], content: "Act as a cinematic storyboard artist. Using Nano Banana 2's subject consistency feature, generate a sequence of 4 consistent frames for a video project titled '[TITLE]'. Maintain the exact resemblance of up to 3 characters and 5 key objects across all frames. Frame 1: Establishing shot; Frame 2: Mid-shot action; Frame 3: Close-up reaction; Frame 4: Wide-angle resolution. Ensure lighting and art style remain perfectly synchronized. Aspect ratio 16:9." }
     ];
 
     /* ──────────────────────────────────────────────────────────
@@ -712,7 +716,7 @@
                     <span style={{ fontSize: "0.45em", fontWeight: 600, color: "var(--color-muted)", marginLeft: 10, verticalAlign: "middle" }}>2026</span>
                   </h1>
                   <p style={{ fontSize: 12, color: "var(--color-muted)", marginTop: 4, fontFamily: "'Outfit', sans-serif", letterSpacing: "0.04em" }}>
-                    {stats.total} prompts · {stats.cats} categories · v4.1.1
+                    {stats.total} prompts · {stats.cats} categories · v4.2.0
                   </p>
                 </div>
 
