@@ -652,17 +652,7 @@
         []
       );
 
-      /* Reset expanded card whenever search or filter changes */
-      useEffect(() => { setExpandedId(null); }, [search, filter]);
-
-      /* Initialize Lucide icons on every render that might change them */
-      useEffect(() => {
-        if (window.lucide) {
-          window.lucide.createIcons();
-        }
-      }, [filteredItems, viewMode, expandedId]);
-
-      /* Filtered data */
+      /* Filtered data — declared BEFORE any useEffect that references it */
       const filteredItems = useMemo(() => {
         const q = search.toLowerCase();
         return promptData.filter(p => {
@@ -675,6 +665,25 @@
         });
       }, [search, filter]);
 
+      /* Reset expanded card whenever search or filter changes */
+      useEffect(() => { setExpandedId(null); }, [search, filter]);
+
+      /*
+       * FIX 1 (CRITICAL): `filteredItems` was referenced in this effect's dependency
+       * array BEFORE it was declared — a Temporal Dead Zone ReferenceError that crashed
+       * the app on the very first render. Moving filteredItems useMemo above resolves it.
+       *
+       * FIX 2: Removed the dep array entirely so Lucide icons are re-initialised after
+       * every render. The original array [filteredItems, viewMode, expandedId] would
+       * silently skip re-runs when only internal state (like a card height change)
+       * triggered a re-render — leaving stale <i> elements without SVG replacements.
+       */
+      useEffect(() => {
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+      });
+
       /* Per-category count map */
       const categoryCounts = useMemo(() => {
         const m = {};
@@ -682,14 +691,18 @@
         return m;
       }, []);
 
-      /* Derived stats — note: categories.length is stable so safe in deps */
+      /*
+       * FIX 3 (MINOR): `categories.length` was listed as a dep but `categories` is
+       * itself a stable useMemo([]) that never changes — its length is a constant.
+       * Replaced with `filteredItems.length` (the actual runtime-variable value).
+       */
       const stats = useMemo(() => ({
         total:    promptData.length,
-        cats:     categories.length - 1,   // exclude "All"
+        cats:     categories.length - 1,
         showing:  filteredItems.length,
-      }), [filteredItems.length, categories.length]);
+      }), [filteredItems.length]);
 
-      /* Clipboard copy with fallback for non-HTTPS contexts */
+      /* Clipboard copy with execCommand fallback for non-HTTPS contexts */
       const copyToClipboard = useCallback((text, title) => {
         const fallback = () => {
           const el = document.createElement("textarea");
