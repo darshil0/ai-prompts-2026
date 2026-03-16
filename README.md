@@ -58,7 +58,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 - **Added 58 new prompts** across 5 new categories and 3 expanded existing ones
 - **New Categories:** Writing & Content, Education & Learning, Audio & Music, Data Analysis, and Personal Productivity
 - **Expanded Categories:** Video Generation (1 → 10), Coding (+5), and Career (+5)
-- **Release Date:** February 22, 2026
+- **Release Date:** February 10, 2026
 
 ---
 
@@ -72,7 +72,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 | **Video Generation** | 11 | Narrative consistency, cinematic camera movements, drone shots, hyperlapses |
 | **Marketing** | 14 | Viral threads, social media agents, ad copy, landing pages |
 | **Career** | 15 | Resumes, LinkedIn optimization, negotiation, FAANG interviews |
-| **Coding** | 17 | 3D simulations, AI Studio, full-stack generator, vision+code |
+| **Coding** | 25 | 3D simulations, AI Studio, full-stack generator, vision+code |
 | **Problem Solving** | 11 | ARC-AGI-2, GPQA Diamond, decision frameworks, habit systems |
 | **Design** | 8 | Vibe coding, color palettes, typography, icons, accessibility |
 | **Agentic AI** | 37 | Edit-then-test, long context refactor, Deep Think, multi-agent |
