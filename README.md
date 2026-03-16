@@ -26,7 +26,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 
 - **Added Nano Banana 2 prompts** — showcasing hyper-accurate image generation with web-grounding and video storyboarding with subject consistency (IDs 199–200)
 - **Total prompt count reached 200** — a major milestone for the collection
-- **Release Date:** February 28, 2026
+- **Release Date:** March 16, 2026
 
 ---
 
