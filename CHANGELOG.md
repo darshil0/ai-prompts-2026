@@ -4,7 +4,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 
 ---
 
-## [4.2.0] — 2026-02-26
+## [4.2.0] — 2026-03-16
 
 ### Added
 - Added new Nano Banana 2 prompts for Image and Video generation (IDs 199–200)
