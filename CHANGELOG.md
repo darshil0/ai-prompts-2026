@@ -15,6 +15,16 @@ All notable changes to this project are documented here. Format follows [Keep a 
 - Total prompt count: 198 → 200
 - Version bump: 4.1.1 → 4.2.0
 
+### Fixed
+- Synchronized version string 'v4.2.0' in `index.html` title and meta tags
+- Corrected v4.0.0 release date in `README.md` to match the changelog (Feb 10, 2026)
+- Refactored hardcoded CSS hex colors into design tokens (`--color-accent-glow`, `--color-accent-border`)
+- Optimized React `useEffect` for dynamic Lucide icon initialization with specific dependencies
+
+### Infrastructure
+- Pinned `lucide` library to version `0.473.0` for production stability
+- Standardized `favicon.svg` background color to `#000000` to match the "Technical Manuscript" theme
+
 ---
 
 ## [4.1.1] — 2026-02-22
