@@ -4,6 +4,22 @@ All notable changes to this project are documented here. Format follows [Keep a 
 
 ---
 
+## [Unreleased]
+
+### Fixed
+
+- Corrected font name references in README (Syne/Outfit → Fraunces/Hanken Grotesk) to match actual implementation
+- Enhanced documentation consistency between README.md and index.html
+
+### Added
+
+- Created CONTRIBUTING.md with comprehensive contribution guidelines
+- Added category-specific submission guidelines
+- Added accessibility and code quality standards for contributors
+- Added commit message conventions and review process documentation
+
+---
+
 ## [4.3.0] — 2026-06-30
 
 ### Changed
