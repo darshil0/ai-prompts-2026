@@ -43,7 +43,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 
 ## ✨ What's New in v4.1.1
 
-- **Design overhaul** — replaced generic Inter/purple-gradient aesthetic with a distinctive dark editorial theme (Syne + Outfit fonts, amber accent palette)
+- **Design overhaul** — replaced generic Inter/purple-gradient aesthetic with a distinctive dark editorial theme (Fraunces + Hanken Grotesk fonts, amber accent palette)
 - **Full bug-fix pass** — animation delay overflow, stale `expandedId`, `type="button"` on all buttons, clipboard fallback, memoization corrections
 - **Accessibility** — `aria-label`, `aria-pressed`, `aria-expanded`, `role="status"`, `.sr-only` labels, semantic HTML throughout
 - **CSS custom property system** — all colours defined as `--color-*` variables for easy theming
@@ -140,47 +140,38 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 
 ```
 ai-prompt-collection-2026/
-├── index.html      # Complete web app with all 200 prompts
-├── README.md       # This file
-├── CHANGELOG.md    # Full version history
-├── SKILLS.MD       # Frontend design & React best practices
-├── LICENSE         # MIT License
-├── favicon.svg     # Project icon (SVG — primary)
-└── favicon.png     # Project icon (PNG — fallback)
+├── index.html        # Complete web app with all 200 prompts
+├── README.md         # This file
+├── CHANGELOG.md      # Full version history
+├── CONTRIBUTING.md   # Contribution guidelines
+├── SKILLS.MD         # Frontend design & React best practices
+├── LICENSE           # MIT License
+├── favicon.svg       # Project icon (SVG — primary)
+└── favicon.png       # Project icon (PNG — fallback)
 ```
 
 ---
 
 ## 🤝 Contributing
 
-We welcome high-quality prompt submissions!
+We welcome high-quality prompt submissions and code improvements!
 
-### How to Contribute
+**Full contribution guidelines** → See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+### Quick Prompt Submission Checklist
 
 1. **Fork** this repository
-2. **Add** your prompt to the `promptData` array in `index.html`:
-
-```javascript
-{
-  id: 199,
-  title: "Your Prompt Title",
-  category: "Category Name",
-  description: "Brief one-liner description",
-  tags: ["Tag1", "Tag2"],
-  content: "Full prompt text that users will copy"
-}
-```
-
-3. **Update** the category counts in this README
-4. **Test** the web interface locally in a browser
-5. **Submit** a pull request with a clear description
+2. **Add** your prompt to the `promptData` array in `index.html` (next available ID)
+3. **Test** locally in your browser
+4. **Submit** a PR with clear description
 
 ### Contribution Guidelines
 
-- **Quality First** — Prompts should be well-tested and produce consistent results
+- **Quality First** — Prompts must be well-tested and produce consistent results
 - **Clear Structure** — Include specific constraints and expected output format
-- **Unique Value** — Avoid duplicating existing prompts (check all 200 before adding)
+- **Unique Value** — Review all 200 prompts before adding (avoid duplicates)
 - **Proper Formatting** — Follow the existing JSON structure exactly
+- **Accessibility** — Maintain semantic HTML and ARIA labels for code contributions
 
 ---
 
