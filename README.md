@@ -3,7 +3,7 @@
 A curated, open-source library of **200 premium AI prompts** optimized for modern generative AI tools (Claude, GPT-4, Gemini 3.1 Pro, Nano Banana 2, and beyond).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-4.2.0-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
+[![Version](https://img.shields.io/badge/version-4.3.0-brightgreen.svg)](https://github.com/darshil0/ai-prompt-collection-2026)
 [![Prompts](https://img.shields.io/badge/prompts-200-F59E0B.svg)](index.html)
 [![Changelog](https://img.shields.io/badge/changelog-CHANGELOG.md-informational.svg)](CHANGELOG.md)
 
@@ -12,13 +12,24 @@ A curated, open-source library of **200 premium AI prompts** optimized for moder
 ## 🚀 Quick Start
 
 ### Option 1: Use the Web Interface
+
 1. Open `index.html` in your browser
 2. Browse by category or search by keyword
 3. Click **Copy** to grab any prompt
 4. Paste into your favourite AI tool
 
 ### Option 2: Direct Integration
+
 Extract prompts from the `promptData` array in `index.html` for programmatic use in your own applications.
+
+---
+
+## ✨ What's New in v4.3.0
+
+- **Dependency updates** — updated React to v18.3.1, Lucide to v0.474.0, and Babel to v8.0.3
+- **Performance & Stability** — optimized Lucide icon rendering and improved category filtering logic
+- **Code Quality** — full codebase formatting and design token refinement
+- **Release Date:** June 30, 2026
 
 ---
 
@@ -64,23 +75,23 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 
 ## 📚 Category Breakdown
 
-| Category | Count | Description |
-|---|---|---|
-| **Infographics** | 8 | Timelines, data visualizations, journey maps, comparison matrices |
-| **Image Generation** | 18 | Web-grounded reality, SVG animations, agentic vision, spatial reasoning |
-| **Image Editing** | 12 | Temporal fusion, style transfers, composites, retouching |
-| **Video Generation** | 11 | Narrative consistency, cinematic camera movements, drone shots, hyperlapses |
-| **Marketing** | 14 | Viral threads, social media agents, ad copy, landing pages |
-| **Career** | 15 | Resumes, LinkedIn optimization, negotiation, FAANG interviews |
-| **Coding** | 25 | 3D simulations, AI Studio, full-stack generator, vision+code |
-| **Problem Solving** | 11 | ARC-AGI-2, GPQA Diamond, decision frameworks, habit systems |
-| **Design** | 8 | Vibe coding, color palettes, typography, icons, accessibility |
-| **Agentic AI** | 37 | Edit-then-test, long context refactor, Deep Think, multi-agent |
-| **Writing & Content** | 10 | Ghostwriting, SEO blog posts, viral hooks, brand manifestos |
-| **Education & Learning** | 8 | Socratic tutoring, first principles, adaptive quizzes, Feynman method |
-| **Audio & Music** | 7 | Generative soundscapes, lyric architecture, podcast notes |
-| **Data Analysis** | 9 | ISS dashboard, insight extraction, SQL generation, predictive models |
-| **Personal Productivity** | 7 | Anti-procrastination, energy-based scheduling, habit conversion |
+| Category                  | Count | Description                                                                 |
+| ------------------------- | ----- | --------------------------------------------------------------------------- |
+| **Infographics**          | 8     | Timelines, data visualizations, journey maps, comparison matrices           |
+| **Image Generation**      | 18    | Web-grounded reality, SVG animations, agentic vision, spatial reasoning     |
+| **Image Editing**         | 12    | Temporal fusion, style transfers, composites, retouching                    |
+| **Video Generation**      | 11    | Narrative consistency, cinematic camera movements, drone shots, hyperlapses |
+| **Marketing**             | 14    | Viral threads, social media agents, ad copy, landing pages                  |
+| **Career**                | 15    | Resumes, LinkedIn optimization, negotiation, FAANG interviews               |
+| **Coding**                | 25    | 3D simulations, AI Studio, full-stack generator, vision+code                |
+| **Problem Solving**       | 11    | ARC-AGI-2, GPQA Diamond, decision frameworks, habit systems                 |
+| **Design**                | 8     | Vibe coding, color palettes, typography, icons, accessibility               |
+| **Agentic AI**            | 37    | Edit-then-test, long context refactor, Deep Think, multi-agent              |
+| **Writing & Content**     | 10    | Ghostwriting, SEO blog posts, viral hooks, brand manifestos                 |
+| **Education & Learning**  | 8     | Socratic tutoring, first principles, adaptive quizzes, Feynman method       |
+| **Audio & Music**         | 7     | Generative soundscapes, lyric architecture, podcast notes                   |
+| **Data Analysis**         | 9     | ISS dashboard, insight extraction, SQL generation, predictive models        |
+| **Personal Productivity** | 7     | Anti-procrastination, energy-based scheduling, habit conversion             |
 
 **Total: 200 Prompts across 15 Categories**
 
@@ -89,12 +100,14 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 ## 🎯 Featured Prompts
 
 ### 🔥 Trending in 2026
+
 - **2026 Vision Board** — Hand-drawn goal visualization with knolling layout
 - **Temporal Fusion** — Seamlessly blend summer/winter in one frame
 - **Hugging My Younger Self** — Emotional cross-generational composite
 - **SAUCE Logical Challenge** — Alphanumeric constraint puzzle for AI
 
 ### 🤖 NEW: Gemini 3.1 Pro (v4.1.0)
+
 - **Animated SVG Series** — Pelican, Frog, Giraffe, Ostrich, Turtle, Dachshund with spatial logic
 - **Starling Murmuration 3D** — Real-time flocking simulation with hand-tracking
 - **Edit-then-Test Agent** — Autonomous bug find, fix, and verify in large repos
@@ -102,6 +115,7 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 - **GPQA Diamond Solver** — PhD-level physics and biology (94%+ target accuracy)
 
 ### 🧠 Google AI Products (v3.3.0)
+
 - **Deep Think Mode** — PhD-level reasoning with Fast/Thinking/Pro settings
 - **Agentic Vision** — Think-Act-Observe loops for active image investigation
 - **NotebookLM Research** — Grounded multi-source research with citations
@@ -109,11 +123,13 @@ Extract prompts from the `promptData` array in `index.html` for programmatic use
 - **Multimodal Live API** — Real-time streaming agents with voice
 
 ### 💼 Professional Power Tools
+
 - **STAR Resume Bullets** — Convert tasks into quantified achievements
 - **Viral Twitter Thread** — 7-tweet engagement framework
 - **React State Debugger** — Fix stale closures and hooks issues
 
 ### 🎨 Creative Generators
+
 - **Object Mythology** — Turn everyday items into legendary artifacts
 - **Identity Without Face** — Atmospheric storytelling through posture
 - **Natural Skin Retouch** — Pore-preserving professional editing
@@ -213,13 +229,13 @@ Special thanks to the AI community for inspiration, feedback, and testing. This 
 
 ## 📊 Project Stats
 
-| Stat | Value |
-|---|---|
-| **Total Prompts** | 200 |
-| **Categories** | 15 |
-| **Version** | 4.2.0 |
-| **Release Date** | February 26, 2026 |
-| **License** | MIT |
+| Stat              | Value                                       |
+| ----------------- | ------------------------------------------- |
+| **Total Prompts** | 200                                         |
+| **Categories**    | 15                                          |
+| **Version**       | 4.3.0                                       |
+| **Release Date**  | June 30, 2026                               |
+| **License**       | MIT                                         |
 | **Maintained by** | [Darshil Shah](https://github.com/darshil0) |
 
 ---

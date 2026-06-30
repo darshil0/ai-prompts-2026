@@ -4,14 +4,27 @@ All notable changes to this project are documented here. Format follows [Keep a 
 
 ---
 
+## [4.3.0] — 2026-06-30
+
+### Changed
+
+- Updated React and ReactDOM to v18.3.1
+- Updated @babel/standalone to v8.0.3
+- Updated Lucide to v0.474.0
+- Refined Lucide icon rendering logic in React `useEffect`
+- Improved category filtering consistency
+- Formatted codebase with Prettier
+
 ## [4.2.0] — 2026-03-16
 
 ### Added
+
 - Added new Nano Banana 2 prompts for Image and Video generation (IDs 199–200)
 - Support for "Web-Grounded Factuality" in image generation
 - Support for "Narrative Consistency" and subject preservation in video storyboarding
 
 ### Changed
+
 - Total prompt count: 198 → 200
 - Version bump: 4.1.1 → 4.2.0
 
@@ -20,6 +33,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 ## [4.1.1] — 2026-02-22
 
 ### Fixed
+
 - Redesigned UI from generic purple-gradient/Inter aesthetic to a distinctive dark editorial theme (Syne + Outfit fonts, amber accent palette)
 - Corrected prompt count badge in README from 183 → 198 to match actual data
 - Aligned category breakdown table counts in README with real prompt data
@@ -41,6 +55,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 - Created favicon.png generation reference
 
 ### Added
+
 - CSS custom property system (`--color-*`) for consistent theming
 - Dot-grid background texture for visual depth
 - Amber left-border card hover effect
@@ -52,6 +67,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 ## [4.1.0] — 2026-02-18
 
 ### Added
+
 - 15 new Gemini 3.1 Pro prompts showcasing advanced reasoning and "Vibe Coding"
 - New SVG Animation Series: Pelican, Frog, Giraffe, Ostrich, Turtle, and Dachshund (IDs 184–189)
 - Wuthering Heights Portfolio design prompt (ID 190)
@@ -65,6 +81,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 - GPQA Diamond Solver (ID 198)
 
 ### Changed
+
 - Total prompt count: 183 → 198
 - Version bump: 4.0.0 → 4.1.0
 
@@ -73,6 +90,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 ## [4.0.0] — 2026-02-10
 
 ### Added
+
 - 58 new prompts across 5 new categories and 3 expanded existing ones
 - New categories: Writing & Content (10), Education & Learning (8), Audio & Music (7), Data Analysis (9), Personal Productivity (7)
 - Expanded categories: Video Generation (1 → 10), Coding (+5), Career (+5)
@@ -86,6 +104,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 - Additional Career prompts: Job Description Optimizer, LinkedIn Thought Leader, Interview Simulation: FAANG, The 'Brag Document' Builder, Freelance Proposal Closer (IDs 179–183)
 
 ### Changed
+
 - Total prompt count: 125 → 183
 - Category count: 10 → 15
 
@@ -94,6 +113,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 ## [3.3.0] — 2026-01-15
 
 ### Added
+
 - Gemini 3.5 Flash Deep Agent Mode with Think-Act-Observe loops (ID 116–117)
 - Google AI Products prompts: NotebookLM, AI Studio, AI Mode Shopping (IDs 118–122)
 - Agentic Vision with active image investigation and Python code generation (ID 117)
@@ -108,6 +128,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 ## [3.2.0] — 2025-12-01
 
 ### Added
+
 - Advanced Agentic AI section with model-specific prompts (IDs 96–115)
 - Multi-Agent Coordination System (ID 96)
 - Context Engineering Blueprint (ID 97)
@@ -135,6 +156,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 ## [3.1.0] — 2025-10-15
 
 ### Added
+
 - Agentic AI section with 15 autonomous workflow prompts (IDs 81–95)
 - Multi-Step Research Agent, Code Review Agent, Customer Support Triage Agent
 - Data Pipeline Orchestrator, Content Strategy Agent, Meeting Summarization Agent
@@ -147,6 +169,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 ## [3.0.0] — 2025-09-01
 
 ### Added
+
 - Initial public release
 - 80 prompts across 9 categories
 - Categories: Infographics, Image Generation, Image Editing, Video Generation, Marketing, Career, Coding, Problem Solving, Design
@@ -156,4 +179,4 @@ All notable changes to this project are documented here. Format follows [Keep a 
 
 ---
 
-*For a full diff of each version, see the [GitHub releases page](https://github.com/darshil0/ai-prompt-collection-2026/releases).*
+_For a full diff of each version, see the [GitHub releases page](https://github.com/darshil0/ai-prompt-collection-2026/releases)._
