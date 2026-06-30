@@ -2350,14 +2350,15 @@
         }, [search, filter]);
 
         /*
-         * FIX 1 (CRITICAL): `filteredItems` was referenced in this effect's dependency
-         * array BEFORE it was declared — a Temporal Dead Zone ReferenceError that crashed
-         * the app on the very first render. Moving filteredItems useMemo above resolves it.
-         *
-         * FIX 2: Removed the dep array entirely so Lucide icons are re-initialised after
-         * every render. The original array [filteredItems, viewMode, expandedId] would
-         * silently skip re-runs when only internal state (like a card height change)
-         * triggered a re-render — leaving stale <i> elements without SVG replacements.
+         * FIX: Lucide icon initialization runs after EVERY render.
+         * Removing the dependency array (or using []) ensures createIcons() is called
+         * whenever the DOM changes. This is safe because lucide.createIcons() is idempotent
+         * (running it multiple times has no negative side effects) and ensures all newly
+         * mounted <i data-lucide="..."> elements get SVG-replaced immediately.
+         * 
+         * Without this, users would see broken icon placeholders during rapid interactions
+         * (search, filter changes, card expansion) because the old dep array [filteredItems, 
+         * viewMode, expandedId] would skip re-runs when other state changed.
          */
         useEffect(() => {
           if (window.lucide) {
@@ -2365,7 +2366,10 @@
           }
         });
 
-        /* Per-category count map */
+        /*
+         * Per-category count map — pre-computed for all prompts (never changes at runtime).
+         * Used only to display counts next to category pills: "All (200)", "Coding (25)", etc.
+         */
         const categoryCounts = useMemo(() => {
           const m = {};
           promptData.forEach((p) => {
@@ -2375,9 +2379,15 @@
         }, []);
 
         /*
-         * FIX 3 (MINOR): `categories.length` was listed as a dep but `categories` is
-         * itself a stable useMemo([]) that never changes — its length is a constant.
-         * Replaced with `filteredItems.length` (the actual runtime-variable value).
+         * FIX: Changed dependency from [categories.length] to [filteredItems.length].
+         * 
+         * Root Cause: `categories` is memoized with [] (empty deps), meaning it's always
+         * the SAME object reference across renders. Its length is a constant (always 16).
+         * But the stats box displays the "Showing" count, which DOES change when the user
+         * searches or filters. That count comes from filteredItems.length.
+         * 
+         * Before Fix: Stats box showed stale "Showing X" count after search/filter changes.
+         * After Fix: Stats box updates immediately when filteredItems changes.
          */
         const stats = useMemo(
           () => ({
