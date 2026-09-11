@@ -2355,9 +2355,9 @@
          * whenever the DOM changes. This is safe because lucide.createIcons() is idempotent
          * (running it multiple times has no negative side effects) and ensures all newly
          * mounted <i data-lucide="..."> elements get SVG-replaced immediately.
-         * 
+         *
          * Without this, users would see broken icon placeholders during rapid interactions
-         * (search, filter changes, card expansion) because the old dep array [filteredItems, 
+         * (search, filter changes, card expansion) because the old dep array [filteredItems,
          * viewMode, expandedId] would skip re-runs when other state changed.
          */
         useEffect(() => {
@@ -2380,12 +2380,12 @@
 
         /*
          * FIX: Changed dependency from [categories.length] to [filteredItems.length].
-         * 
+         *
          * Root Cause: `categories` is memoized with [] (empty deps), meaning it's always
          * the SAME object reference across renders. Its length is a constant (always 16).
          * But the stats box displays the "Showing" count, which DOES change when the user
          * searches or filters. That count comes from filteredItems.length.
-         * 
+         *
          * Before Fix: Stats box showed stale "Showing X" count after search/filter changes.
          * After Fix: Stats box updates immediately when filteredItems changes.
          */
@@ -2401,15 +2401,23 @@
         /* Clipboard copy with execCommand fallback for non-HTTPS contexts */
         const copyToClipboard = useCallback((text, title) => {
           const fallback = () => {
-            const el = document.createElement("textarea");
-            el.value = text;
-            el.setAttribute("readonly", "");
-            el.style.cssText = "position:absolute;left:-9999px";
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand("copy");
-            document.body.removeChild(el);
-            setToast(`✓ Copied "${title}"`);
+            try {
+              const el = document.createElement("textarea");
+              el.value = text;
+              el.setAttribute("readonly", "");
+              el.style.cssText = "position:absolute;left:-9999px";
+              document.body.appendChild(el);
+              el.select();
+              const successful = document.execCommand("copy");
+              document.body.removeChild(el);
+              if (successful) {
+                setToast(`✓ Copied "${title}"`);
+              } else {
+                setToast("⚠️ Unable to copy prompt. Please copy manually.");
+              }
+            } catch (err) {
+              setToast("⚠️ Unable to copy prompt. Please copy manually.");
+            }
           };
 
           if (!navigator.clipboard) {
@@ -2723,6 +2731,11 @@
                                 setExpandedId(expandedId === p.id ? null : p.id)
                               }
                               aria-expanded={expandedId === p.id}
+                              aria-label={
+                                expandedId === p.id
+                                  ? `Show less of prompt: ${p.title}`
+                                  : `Show full prompt: ${p.title}`
+                              }
                             >
                               <i
                                 data-lucide={
