@@ -11,6 +11,7 @@ The user provides frontend requirements: a component, page, application, or inte
 ## Design Thinking
 
 Before coding, understand the context and commit to a BOLD aesthetic direction:
+
 - **Purpose**: What problem does this interface solve? Who uses it?
 - **Tone**: Pick an extreme: brutally minimal, maximalist chaos, retro-futuristic, organic/natural, luxury/refined, playful/toy-like, editorial/magazine, brutalist/raw, art deco/geometric, soft/pastel, industrial/utilitarian, etc. There are so many flavors to choose from. Use these for inspiration but design one that is true to the aesthetic direction.
 - **Constraints**: Technical requirements (framework, performance, accessibility).
@@ -19,6 +20,7 @@ Before coding, understand the context and commit to a BOLD aesthetic direction:
 **CRITICAL**: Choose a clear conceptual direction and execute it with precision. Bold maximalism and refined minimalism both work - the key is intentionality, not intensity.
 
 Then implement working code (HTML/CSS/JS, React, Vue, etc.) that is:
+
 - Production-grade and functional
 - Visually striking and memorable
 - Cohesive with a clear aesthetic point-of-view
@@ -27,6 +29,7 @@ Then implement working code (HTML/CSS/JS, React, Vue, etc.) that is:
 ## Frontend Aesthetics Guidelines
 
 Focus on:
+
 - **Typography**: Choose fonts that are beautiful, unique, and interesting. Avoid generic fonts like Arial and Inter; opt instead for distinctive choices that elevate the frontend's aesthetics; unexpected, characterful font choices. Pair a distinctive display font with a refined body font.
 - **Color & Theme**: Commit to a cohesive aesthetic. Use CSS custom properties (`--color-*`) for consistency across the entire interface. Dominant colors with sharp accents outperform timid, evenly-distributed palettes. Define your palette upfront in `:root` and never hardcode colors inline.
 - **Motion**: Use animations for effects and micro-interactions. Prioritize CSS-only solutions for HTML. Use Motion library for React when available. Focus on high-impact moments: one well-orchestrated page load with staggered reveals (`animation-delay`) creates more delight than scattered micro-interactions. Cap `animation-delay` values — with large lists, delays can accumulate to many seconds; clamp to a maximum of ~0.4s. Use scroll-triggering and hover states that surprise.
@@ -83,15 +86,15 @@ Use this pattern for maintainable, themeable styles:
 
 ```css
 :root {
-  --color-bg:       #09090E;
-  --color-surface:  #111118;
-  --color-border:   #1E1E2A;
-  --color-accent:   #F59E0B;
-  --color-accent-2: #FBBF24;
-  --color-text:     #EDEDF5;
-  --color-muted:    #7777A0;
-  --radius-card:    14px;
-  --transition:     all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --color-bg: #09090e;
+  --color-surface: #111118;
+  --color-border: #1e1e2a;
+  --color-accent: #f59e0b;
+  --color-accent-2: #fbbf24;
+  --color-text: #ededf5;
+  --color-muted: #7777a0;
+  --radius-card: 14px;
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 ```
 

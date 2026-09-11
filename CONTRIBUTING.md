@@ -7,6 +7,7 @@ Thank you for your interest in contributing! We welcome high-quality prompt subm
 ### 1. Adding New Prompts
 
 **Before You Start**
+
 - Review all 200 existing prompts in `index.html` to avoid duplicates
 - Ensure your prompt is novel and provides clear value
 - Test your prompt in your target AI model
@@ -28,6 +29,7 @@ Thank you for your interest in contributing! We welcome high-quality prompt subm
 ```
 
 **Quality Checklist**
+
 - [ ] Prompt has been tested and produces consistent results
 - [ ] Title is descriptive (2-4 words)
 - [ ] Description is concise and action-oriented
@@ -48,6 +50,7 @@ Thank you for your interest in contributing! We welcome high-quality prompt subm
 ### 2. Improving Existing Prompts
 
 Found an error or way to improve a prompt? Submit a PR with:
+
 - Which prompt ID and title you're updating
 - What changed and why
 - Testing evidence (screenshots, outputs)
@@ -55,6 +58,7 @@ Found an error or way to improve a prompt? Submit a PR with:
 ### 3. Code Improvements
 
 Contributions welcome for:
+
 - **Performance**: Optimizing React rendering, reducing bundle size
 - **Accessibility**: Improving ARIA labels, keyboard navigation, screen reader support
 - **User Experience**: Better search, improved filtering, mobile optimization
@@ -66,6 +70,7 @@ Contributions welcome for:
 All code contributions must maintain:
 
 **Accessibility**
+
 - Semantic HTML (`<nav>`, `<main>`, `<article>`, etc.)
 - ARIA labels on interactive elements (`aria-label`, `aria-expanded`, `aria-pressed`)
 - Screen reader-friendly text (`aria-live`, `role="status"`)
@@ -73,6 +78,7 @@ All code contributions must maintain:
 - Sufficient color contrast (WCAG AA minimum)
 
 **Code Quality**
+
 - Follow existing code style (Prettier-formatted)
 - Use meaningful variable names
 - Add comments for complex logic
@@ -80,6 +86,7 @@ All code contributions must maintain:
 - Mobile-responsive design
 
 **Performance**
+
 - Lazy-load images where possible
 - Minimize external API calls
 - Optimize React memoization (avoid unnecessary re-renders)
@@ -94,6 +101,7 @@ All code contributions must maintain:
 ```
 
 **Types**:
+
 - `feat`: New prompt or feature
 - `fix`: Bug fix or documentation correction
 - `refactor`: Code restructuring without behavior change
@@ -102,6 +110,7 @@ All code contributions must maintain:
 - `style`: Code formatting or styling
 
 **Examples**:
+
 ```
 feat: Add prompt 201 - Advanced RAG Pipeline Designer
 fix: Correct font names in README from Syne/Outfit to Fraunces/Hanken
@@ -120,23 +129,23 @@ docs: Update CHANGELOG for v4.3.0 release
 
 When submitting a prompt, choose the most appropriate category:
 
-| Category | Best For |
-|----------|----------|
-| **Infographics** | Timelines, flowcharts, visualizations, journey maps |
-| **Image Generation** | Photos, artwork, compositions, with grounding/constraints |
-| **Image Editing** | Retouching, style transfer, temporal fusion, compositing |
-| **Video Generation** | Narrative consistency, camera movements, animations |
-| **Marketing** | Social media, ad copy, landing pages, viral content |
-| **Career** | Resumes, interviews, LinkedIn, negotiation |
-| **Coding** | Full-stack, debugging, algorithms, automation |
-| **Problem Solving** | Logic puzzles, reasoning, frameworks, decision-making |
-| **Design** | UI/UX, color, typography, accessibility, vibe coding |
-| **Agentic AI** | Multi-step workflows, autonomous agents, tool use |
-| **Writing & Content** | Ghostwriting, SEO, content strategy, copywriting |
-| **Education & Learning** | Tutoring, explanations, quizzes, skill-building |
-| **Audio & Music** | Soundscapes, lyrics, podcast processing |
-| **Data Analysis** | Dashboards, insight extraction, SQL, visualization |
-| **Personal Productivity** | Time management, habit systems, anti-procrastination |
+| Category                  | Best For                                                  |
+| ------------------------- | --------------------------------------------------------- |
+| **Infographics**          | Timelines, flowcharts, visualizations, journey maps       |
+| **Image Generation**      | Photos, artwork, compositions, with grounding/constraints |
+| **Image Editing**         | Retouching, style transfer, temporal fusion, compositing  |
+| **Video Generation**      | Narrative consistency, camera movements, animations       |
+| **Marketing**             | Social media, ad copy, landing pages, viral content       |
+| **Career**                | Resumes, interviews, LinkedIn, negotiation                |
+| **Coding**                | Full-stack, debugging, algorithms, automation             |
+| **Problem Solving**       | Logic puzzles, reasoning, frameworks, decision-making     |
+| **Design**                | UI/UX, color, typography, accessibility, vibe coding      |
+| **Agentic AI**            | Multi-step workflows, autonomous agents, tool use         |
+| **Writing & Content**     | Ghostwriting, SEO, content strategy, copywriting          |
+| **Education & Learning**  | Tutoring, explanations, quizzes, skill-building           |
+| **Audio & Music**         | Soundscapes, lyrics, podcast processing                   |
+| **Data Analysis**         | Dashboards, insight extraction, SQL, visualization        |
+| **Personal Productivity** | Time management, habit systems, anti-procrastination      |
 
 ## ⚖️ License
 
@@ -158,6 +167,7 @@ By contributing, you agree that your contributions are licensed under the **MIT 
 ## 🎉 Recognition
 
 Contributors are recognized in:
+
 - CHANGELOG.md (for significant contributions)
 - GitHub contributors graph
 - README Acknowledgments section (for major contributions)
