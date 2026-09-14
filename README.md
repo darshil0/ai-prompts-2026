@@ -22,6 +22,57 @@ A curated, open-source library of **200 premium AI prompts** optimized for moder
 
 Extract prompts from the `promptData` array in `index.html` for programmatic use in your own applications.
 
+---
+
+## ✨ What's New in v4.3.0
+
+- **Dependency updates** — updated React to v19.2.3, Lucide to v0.474.0, and Babel to v8.0.3
+- **Performance & Stability** — optimized Lucide icon rendering and improved category filtering logic
+- **Code Quality** — full codebase formatting and design token refinement
+- **Release Date:** June 30, 2026
+
+---
+
+## ✨ What's New in v4.2.0
+
+- **Added Nano Banana 2 prompts** — showcasing hyper-accurate image generation with web-grounding and video storyboarding with subject consistency (IDs 199–200)
+- **Total prompt count reached 200** — a major milestone for the collection
+- **Release Date:** March 16, 2026
+
+---
+
+## ✨ What's New in v4.1.1
+
+- **Design overhaul** — replaced generic Inter/purple-gradient aesthetic with a distinctive dark editorial theme (Fraunces + Hanken Grotesk fonts, amber accent palette)
+- **Full bug-fix pass** — animation delay overflow, stale `expandedId`, `type="button"` on all buttons, clipboard fallback, memoization corrections
+- **Accessibility** — `aria-label`, `aria-pressed`, `aria-expanded`, `role="status"`, `.sr-only` labels, semantic HTML throughout
+- **CSS custom property system** — all colours defined as `--color-*` variables for easy theming
+- **New favicon** — robot icon (SVG + PNG) replacing the generic "A" circle
+- **CHANGELOG.md** — full version history added
+- **SKILLS.MD** — expanded with React patterns, accessibility checklist, CSS architecture, and file checklist sections
+
+---
+
+## ✨ What's New in v4.1.0
+
+- **Added 15 new Gemini 3.1 Pro prompts** showcasing advanced reasoning and "Vibe Coding"
+- **New SVG Animation Series:** Pelican, Frog, Giraffe, Ostrich, Turtle, and Dachshund (IDs 184–189)
+- **Multimodal Simulations:** Starling murmuration with hand-tracking and generative soundscapes (IDs 191–193)
+- **Advanced Agentic Tools:** Edit-then-test loops and extended output refactoring (65k tokens) (IDs 195–196)
+- **Logic & Science Breakthroughs:** ARC-AGI-2 logic puzzles and GPQA Diamond (PhD-level) (IDs 197–198)
+- **Release Date:** February 18, 2026
+
+---
+
+## ✨ What's New in v4.0.0
+
+- **Added 60 new prompts** across 5 new categories and 3 expanded existing ones
+- **New Categories:** Writing & Content, Education & Learning, Audio & Music, Data Analysis, and Personal Productivity
+- **Expanded Categories:** Video Generation (1 → 10), Coding (+5), and Career (+5)
+- **Release Date:** February 10, 2026
+
+---
+
 ## 📚 Category Breakdown
 
 | Category                  | Count | Description                                                                 |
@@ -146,7 +197,6 @@ We welcome high-quality prompt submissions and code improvements!
 
 ## 🔗 Related Resources
 
-- [Anthropic Prompt Library](https://docs.anthropic.com/en/prompt-library/library)
 - [Anthropic Prompt Engineering Guide](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview)
 - [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
 - [Google AI Prompting Introduction](https://ai.google.dev/docs/prompting_intro)
@@ -170,7 +220,7 @@ Special thanks to the AI community for inspiration, feedback, and testing. This 
 ## 📊 Project Stats
 
 | Stat              | Value                                       |
-| ----------------- | ------------------------------------------- |
+| ----------------- | ------------------------------------------ |
 | **Total Prompts** | 200                                         |
 | **Categories**    | 15                                          |
 | **Version**       | 4.3.0                                       |
